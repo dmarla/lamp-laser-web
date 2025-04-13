@@ -315,7 +315,7 @@ const Equipment = () => {
                             </TableRow>
                           </TableBody>
                         </Table>
-                        <p className="text-xs text-gray-500 mt-2">*Bulk discount applies for >10 hours or samples</p>
+                        <p className="text-xs text-gray-500 mt-2">*Bulk discount applies for {'>'}10 hours or samples</p>
                       </TabsContent>
                     </Tabs>
                     
@@ -455,3 +455,4 @@ const Equipment = () => {
 };
 
 export default Equipment;
+
