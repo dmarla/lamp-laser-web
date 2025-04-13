@@ -3,6 +3,15 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import { 
+  NavigationMenu,
+  NavigationMenuContent, 
+  NavigationMenuItem, 
+  NavigationMenuLink, 
+  NavigationMenuList, 
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,15 +30,33 @@ const Navbar = () => {
             <span className="hidden md:block text-gray-600 text-sm">LASER ADVANCED MATERIALS PROCESSING LAB</span>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 items-center">
-            <Link to="/" className="text-gray-700 hover:text-lamp-red transition-colors">Home</Link>
-            <Link to="/research" className="text-gray-700 hover:text-lamp-red transition-colors">Research</Link>
-            <Link to="/team" className="text-gray-700 hover:text-lamp-red transition-colors">Team</Link>
-            <Link to="/equipment" className="text-gray-700 hover:text-lamp-red transition-colors">Equipment</Link>
-            <Link to="/capabilities" className="text-gray-700 hover:text-lamp-red transition-colors">Capabilities</Link>
-            <Link to="/publications" className="text-gray-700 hover:text-lamp-red transition-colors">Publications</Link>
-            <Link to="/students" className="text-gray-700 hover:text-lamp-red transition-colors">For Students</Link>
+          {/* Desktop Navigation Menu */}
+          <div className="hidden md:block">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link to="/" className={navigationMenuTriggerStyle()}>Home</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/research" className={navigationMenuTriggerStyle()}>Research</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/team" className={navigationMenuTriggerStyle()}>Team</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/equipment" className={navigationMenuTriggerStyle()}>Equipment</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/capabilities" className={navigationMenuTriggerStyle()}>Capabilities</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/publications" className={navigationMenuTriggerStyle()}>Publications</Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link to="/students" className={navigationMenuTriggerStyle()}>For Students</Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           {/* Mobile Menu Button */}
