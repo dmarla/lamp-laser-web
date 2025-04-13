@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - LAMP</title>
+  <meta name="description" content="Publications from the Laser Advanced Materials Processing Lab at IIT Bombay" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <span class="logo-text">LAMP</span>
+            <span class="logo-subtext">LASER ADVANCED MATERIALS PROCESSING LAB</span>
+          </a>
+
+          <button class="mobile-menu-button" id="menuToggle">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon hidden">✕</span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+          <a href="index.html" class="mobile-link">Home</a>
+          <a href="research.html" class="mobile-link">Research</a>
+          <a href="team.html" class="mobile-link">Team</a>
+          <a href="equipment.html" class="mobile-link">Equipment</a>
+          <a href="capabilities.html" class="mobile-link">Capabilities</a>
+          <a href="publications.html" class="mobile-link active">Publications</a>
+          <a href="students.html" class="mobile-link">For Students</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Publications</h1>
+        <p class="page-description">
+          Our research findings are published in leading scientific journals and presented at international conferences.
+        </p>
+      </div>
+    </section>
+    
+    <section class="section bg-white">
+      <div class="container">
+        <div class="tabs" id="publicationsTabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="recent">
+              <span class="icon">📄</span> Recent Publications
+            </button>
+            <button class="tab-btn" data-tab="highlighted">
+              <span class="icon">🏆</span> Highlighted Publications
+            </button>
+            <button class="tab-btn" data-tab="patents">
+              <span class="icon">📚</span> Patents
+            </button>
+          </div>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="recent">
+              <div class="publications-list">
+                <div class="publication-card">
+                  <h3>Laser surface texturing for enhanced tribological properties of titanium alloys</h3>
+                  <p class="authors">Kumar R., Sharma A., Singh P.</p>
+                  <div class="pub-meta">
+                    <p>Journal of Materials Processing Technology, 2023</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.jmatprotec.2023.01.015" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.jmatprotec.2023.01.015
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Selective laser melting of nickel-based superalloys: Process optimization and microstructural evolution</h3>
+                  <p class="authors">Verma R., Mehta V., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Additive Manufacturing, 2023</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.addma.2023.02.008" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.addma.2023.02.008
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Ultrafast laser-induced periodic surface structures: Formation mechanisms and applications</h3>
+                  <p class="authors">Singh P., Patel N., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Applied Surface Science, 2022</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.apsusc.2022.08.121" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.apsusc.2022.08.121
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Direct laser interference patterning for surface functionalization of biomedical implants</h3>
+                  <p class="authors">Sharma A., Kumar R., Patel N.</p>
+                  <div class="pub-meta">
+                    <p>Proceedings of the International Conference on Advanced Manufacturing, 2022</p>
+                    <span class="pub-type">Conference</span>
+                  </div>
+                  <a href="https://doi.org/10.1109/ICAM.2022.9876543" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1109/ICAM.2022.9876543
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Computational modeling of melt pool dynamics in laser powder bed fusion processes</h3>
+                  <p class="authors">Verma R., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Journal of Manufacturing Science and Engineering, 2022</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1115/1.4053678" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1115/1.4053678
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Novel gradient functional materials through directed energy deposition: Challenges and opportunities</h3>
+                  <p class="authors">Kumar R., Mehta V., Sharma A.</p>
+                  <div class="pub-meta">
+                    <p>Materials & Design, 2021</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.matdes.2021.109876" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.matdes.2021.109876
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="highlighted">
+              <div class="publications-list">
+                <div class="publication-card highlighted">
+                  <h3>Hybrid laser manufacturing of metal matrix nanocomposites with tailored properties</h3>
+                  <p class="authors">Kumar R., Sharma A., Verma R.</p>
+                  <div class="pub-meta">
+                    <p>Nature Materials, 2022</p>
+                    <span class="impact">Impact Factor: 43.841</span>
+                  </div>
+                  <a href="https://doi.org/10.1038/s41563-022-01234-0" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1038/s41563-022-01234-0
+                  </a>
+                </div>
+                
+                <div class="publication-card highlighted">
+                  <h3>Ultrafast laser-enabled multifunctional surfaces for advanced photonic applications</h3>
+                  <p class="authors">Singh P., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Science Advances, 2021</p>
+                    <span class="impact">Impact Factor: 13.116</span>
+                  </div>
+                  <a href="https://doi.org/10.1126/sciadv.abd1234" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1126/sciadv.abd1234
+                  </a>
+                </div>
+                
+                <div class="publication-card highlighted">
+                  <h3>Selective laser melting of biodegradable magnesium alloys for personalized medical implants</h3>
+                  <p class="authors">Sharma A., Patel N., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Acta Biomaterialia, 2022</p>
+                    <span class="impact">Impact Factor: 8.947</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.actbio.2022.03.012" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.actbio.2022.03.012
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="patents">
+              <div class="publications-list">
+                <div class="publication-card">
+                  <h3>Method and apparatus for laser-assisted manufacturing of gradient functional materials</h3>
+                  <p>Inventors: Kumar R., Sharma A.</p>
+                  <p>Patent Number: US Patent 11,325,876</p>
+                  <div class="pub-meta">
+                    <p>Year: 2023</p>
+                    <span class="status granted">Granted</span>
+                  </div>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Surface texturing method using interference of ultrafast laser beams</h3>
+                  <p>Inventors: Singh P., Kumar R.</p>
+                  <p>Patent Number: Indian Patent 123456</p>
+                  <div class="pub-meta">
+                    <p>Year: 2022</p>
+                    <span class="status pending">Filed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="export-options">
+          <h3>Export Publications</h3>
+          <p>Download our publication list in your preferred format:</p>
+          <div class="export-buttons">
+            <a href="#" class="btn btn-sm">BibTeX</a>
+            <a href="#" class="btn btn-sm">EndNote</a>
+            <a href="#" class="btn btn-sm">PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>LAMP</h3>
+          <p>
+            LASER ADVANCED MATERIALS PROCESSING LAB at IIT Bombay advances research in laser-material interactions and manufacturing technologies.
+          </p>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">𝕏</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">in</span>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">▶</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="capabilities.html">Industry</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="icon">📍</span>
+              <span>
+                Department of Mechanical Engineering,<br />
+                IIT Bombay, Powai,<br />
+                Mumbai - 400076, India
+              </span>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <a href="mailto:lamp@iitb.ac.in">lamp@iitb.ac.in</a>
+            </li>
+            <li>
+              <span class="icon">📞</span>
+              <a href="tel:+912225767890">+91 (22) 2576 7890</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>
+            Subscribe to our newsletter for updates on research breakthroughs and upcoming events.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn-icon">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2023</span> LAMP, IIT Bombay. All rights reserved.
+        </p>
+        <div class="iitb-link">
+          <span class="icon">🌐</span>
+          <a href="https://www.iitb.ac.in" target="_blank" rel="noopener noreferrer">
+            IIT Bombay
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

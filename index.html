@@ -1,26 +1,580 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lamp-laser-web</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAMP - Laser Advanced Materials Processing Lab</title>
+  <meta name="description" content="Laser Advanced Materials Processing Lab at IIT Bombay" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <span class="logo-text">LAMP</span>
+            <span class="logo-subtext">LASER ADVANCED MATERIALS PROCESSING LAB</span>
+          </a>
 
-    <meta property="og:title" content="lamp-laser-web" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+          <button class="mobile-menu-button" id="menuToggle">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon hidden">✕</span>
+          </button>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+          <a href="index.html" class="mobile-link">Home</a>
+          <a href="research.html" class="mobile-link">Research</a>
+          <a href="team.html" class="mobile-link">Team</a>
+          <a href="equipment.html" class="mobile-link">Equipment</a>
+          <a href="capabilities.html" class="mobile-link">Capabilities</a>
+          <a href="publications.html" class="mobile-link">Publications</a>
+          <a href="students.html" class="mobile-link">For Students</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="tag">IIT Bombay Research</div>
+          <h1>LASER ADVANCED <br>
+            <span class="text-highlight">MATERIALS PROCESSING</span> LAB
+          </h1>
+          <p class="hero-text">
+            Pioneering research in laser-material interactions, advanced manufacturing processes, and innovative material technologies at the Indian Institute of Technology Bombay.
+          </p>
+          <div class="hero-buttons">
+            <a href="research.html" class="btn btn-primary">
+              Explore Our Research <span class="icon">→</span>
+            </a>
+            <a href="students.html" class="btn btn-outline">
+              For Prospective Students
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-border"></div>
+    </section>
+
+    <!-- Research Areas Section -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="section-heading">Our Research Areas</h2>
+        <p class="section-description">
+          Our laboratory focuses on fundamental and applied research in laser-material interactions, 
+          creating innovative manufacturing processes and advanced materials with unique properties.
+        </p>
+        
+        <div class="tabs" id="researchTabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="laser-materials">Laser-Material Interaction</button>
+            <button class="tab-btn" data-tab="additive-manufacturing">Additive Manufacturing</button>
+            <button class="tab-btn" data-tab="surface-engineering">Surface Engineering</button>
+            <button class="tab-btn" data-tab="advanced-materials">Advanced Materials</button>
+          </div>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="laser-materials">
+              <div class="card">
+                <h3>Laser-Material Interaction</h3>
+                <p>Fundamental understanding of how different laser types interact with various materials across multiple scales.</p>
+                <ul class="topic-list">
+                  <li>Ultrafast laser interaction phenomena</li>
+                  <li>Thermal and non-thermal processing mechanisms</li>
+                  <li>Material transformation under intense laser fields</li>
+                  <li>Computational modeling of laser-matter interactions</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="additive-manufacturing">
+              <div class="card">
+                <h3>Additive Manufacturing</h3>
+                <p>Research on advanced laser-based additive manufacturing for metals, polymers, and composite materials.</p>
+                <ul class="topic-list">
+                  <li>Laser powder bed fusion optimization</li>
+                  <li>Direct energy deposition processes</li>
+                  <li>Novel materials for additive manufacturing</li>
+                  <li>Process monitoring and quality control</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="surface-engineering">
+              <div class="card">
+                <h3>Surface Engineering</h3>
+                <p>Developing novel surface modification techniques using laser processing to enhance material properties.</p>
+                <ul class="topic-list">
+                  <li>Laser texturing for enhanced tribological properties</li>
+                  <li>Functionalized surfaces for biomedical applications</li>
+                  <li>Superhydrophobic and superhydrophilic surfaces</li>
+                  <li>Corrosion-resistant coatings</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="advanced-materials">
+              <div class="card">
+                <h3>Advanced Materials</h3>
+                <p>Creating and characterizing next-generation materials with enhanced properties through laser processing.</p>
+                <ul class="topic-list">
+                  <li>Metal-matrix nanocomposites</li>
+                  <li>Gradient functional materials</li>
+                  <li>High-entropy alloys</li>
+                  <li>Smart responsive materials</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="research.html" class="link-arrow">
+            View all research projects <span class="icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="section gradient-bg">
+      <div class="container">
+        <h2 class="section-heading">Our Team</h2>
+        <p class="section-description">
+          Meet the researchers, scientists, and students driving innovation and excellence in laser materials processing at IIT Bombay.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/300?img=1" alt="Prof. Ramesh Kumar">
+            </div>
+            <h3>Prof. Ramesh Kumar</h3>
+            <p class="role">Principal Investigator</p>
+            <p class="bio">Ph.D. from MIT with 15+ years of experience in laser materials processing.</p>
+            <a href="mailto:ramesh@iitb.ac.in" class="email">ramesh@iitb.ac.in</a>
+          </div>
+          
+          <div class="team-card">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/300?img=5" alt="Dr. Anjali Sharma">
+            </div>
+            <h3>Dr. Anjali Sharma</h3>
+            <p class="role">Associate Professor</p>
+            <p class="bio">Expert in laser additive manufacturing and process optimization.</p>
+            <a href="mailto:anjali@iitb.ac.in" class="email">anjali@iitb.ac.in</a>
+          </div>
+          
+          <div class="team-card">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/300?img=3" alt="Dr. Rahul Verma">
+            </div>
+            <h3>Dr. Rahul Verma</h3>
+            <p class="role">Assistant Professor</p>
+            <p class="bio">Specializes in computational modeling of laser-material interactions.</p>
+            <a href="mailto:rahul@iitb.ac.in" class="email">rahul@iitb.ac.in</a>
+          </div>
+          
+          <div class="team-card">
+            <div class="avatar">
+              <img src="https://i.pravatar.cc/300?img=10" alt="Dr. Priya Singh">
+            </div>
+            <h3>Dr. Priya Singh</h3>
+            <p class="role">Research Scientist</p>
+            <p class="bio">Focuses on surface engineering and characterization techniques.</p>
+            <a href="mailto:priya@iitb.ac.in" class="email">priya@iitb.ac.in</a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="team.html" class="btn btn-outline">
+            Meet Our Complete Team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="section-heading">Equipment & Facilities</h2>
+        <p class="section-description">
+          Our laboratory is equipped with state-of-the-art laser systems and material characterization tools to support cutting-edge research.
+        </p>
+
+        <div class="equipment-grid">
+          <div class="equipment-card">
+            <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="equipment-header">
+              <h3>High-Power Fiber Laser System</h3>
+              <span class="badge">2021</span>
+            </div>
+            <p>2kW continuous wave fiber laser with integrated chiller and beam delivery system.</p>
+            <div class="tags">
+              <span class="tag">Cutting</span>
+              <span class="tag">Welding</span>
+              <span class="tag">Surface Treatment</span>
+            </div>
+            <div class="equipment-rates">
+              <h4>Service Charges (per hour):</h4>
+              <div class="rate-row">
+                <span>Academic Rate:</span>
+                <span>₹2,500</span>
+              </div>
+              <div class="rate-row">
+                <span>Industry Rate:</span>
+                <span>₹5,000</span>
+              </div>
+            </div>
+            <a href="equipment.html#high-power-fiber-laser-system" class="equipment-link">
+              View Details <span class="icon">→</span>
+            </a>
+          </div>
+          
+          <div class="equipment-card">
+            <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+            <div class="equipment-header">
+              <h3>Femtosecond Laser Micromachining Station</h3>
+              <span class="badge">2022</span>
+            </div>
+            <p>Ultrafast laser with automated 5-axis positioning system for precision micromachining.</p>
+            <div class="tags">
+              <span class="tag">Micromachining</span>
+              <span class="tag">Ablation</span>
+              <span class="tag">Surface Texturing</span>
+            </div>
+            <div class="equipment-rates">
+              <h4>Service Charges (per hour):</h4>
+              <div class="rate-row">
+                <span>Academic Rate:</span>
+                <span>₹3,000</span>
+              </div>
+              <div class="rate-row">
+                <span>Industry Rate:</span>
+                <span>₹6,000</span>
+              </div>
+            </div>
+            <a href="equipment.html#femtosecond-laser-micromachining-station" class="equipment-link">
+              View Details <span class="icon">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="equipment.html" class="btn btn-outline">
+            View All Equipment
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="section gradient-bg">
+      <div class="container">
+        <h2 class="section-heading">Industry Capabilities</h2>
+        <p class="section-description">
+          LAMP offers extensive research partnerships and technical services to industry partners, leveraging our expertise in laser technology and materials science.
+        </p>
+
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">⚙️</span>
+            </div>
+            <h3>Materials Processing</h3>
+            <p>Advanced laser-based technologies for cutting, welding, drilling, and surface modification of metals, polymers, ceramics, and composites.</p>
+          </div>
+          
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">🔬</span>
+            </div>
+            <h3>Material Analysis</h3>
+            <p>Comprehensive material characterization services including microstructure analysis, phase identification, and mechanical property testing.</p>
+          </div>
+          
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">🏭</span>
+            </div>
+            <h3>Manufacturing Solutions</h3>
+            <p>Custom manufacturing process development and optimization for industrial partners seeking improved efficiency and quality.</p>
+          </div>
+          
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">💡</span>
+            </div>
+            <h3>Innovation Consulting</h3>
+            <p>Expert consultation on implementing laser-based technologies and advanced materials in manufacturing workflows.</p>
+          </div>
+          
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">🚀</span>
+            </div>
+            <h3>Rapid Prototyping</h3>
+            <p>Fast iteration capabilities for functional prototypes using additive manufacturing and laser processing techniques.</p>
+          </div>
+          
+          <div class="capability-card">
+            <div class="capability-icon">
+              <span class="icon">🛡️</span>
+            </div>
+            <h3>Quality Assurance</h3>
+            <p>Rigorous testing and validation of materials and components according to international standards.</p>
+          </div>
+        </div>
+
+        <div class="partner-box">
+          <h3>Partner With Us</h3>
+          <p>
+            We collaborate with companies of all sizes to solve complex manufacturing challenges, improve processes, 
+            and develop next-generation products through applied research and technology transfer.
+          </p>
+          <div class="partner-cta">
+            <div>Contact us to discuss how we can help your business innovate and grow.</div>
+            <a href="mailto:lamp@iitb.ac.in" class="btn btn-primary">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="capabilities.html" class="btn btn-outline">
+            Explore Our Capabilities
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="section-heading">Recent Publications</h2>
+        <p class="section-description">
+          Our research findings are published in leading scientific journals and presented at international conferences.
+        </p>
+
+        <div class="tabs" id="publicationsTabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="recent">
+              <span class="icon">📄</span> Recent
+            </button>
+            <button class="tab-btn" data-tab="highlighted">
+              <span class="icon">🏆</span> Highlighted
+            </button>
+            <button class="tab-btn" data-tab="patents">
+              <span class="icon">📚</span> Patents
+            </button>
+          </div>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="recent">
+              <div class="publications-list">
+                <div class="publication-card">
+                  <h3>Laser surface texturing for enhanced tribological properties of titanium alloys</h3>
+                  <p class="authors">Kumar R., Sharma A., Singh P.</p>
+                  <div class="pub-meta">
+                    <p>Journal of Materials Processing Technology, 2023</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.jmatprotec.2023.01.015" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.jmatprotec.2023.01.015
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Selective laser melting of nickel-based superalloys: Process optimization and microstructural evolution</h3>
+                  <p class="authors">Verma R., Mehta V., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Additive Manufacturing, 2023</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.addma.2023.02.008" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.addma.2023.02.008
+                  </a>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Ultrafast laser-induced periodic surface structures: Formation mechanisms and applications</h3>
+                  <p class="authors">Singh P., Patel N., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Applied Surface Science, 2022</p>
+                    <span class="pub-type">Journal</span>
+                  </div>
+                  <a href="https://doi.org/10.1016/j.apsusc.2022.08.121" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1016/j.apsusc.2022.08.121
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="highlighted">
+              <div class="publications-list">
+                <div class="publication-card highlighted">
+                  <h3>Hybrid laser manufacturing of metal matrix nanocomposites with tailored properties</h3>
+                  <p class="authors">Kumar R., Sharma A., Verma R.</p>
+                  <div class="pub-meta">
+                    <p>Nature Materials, 2022</p>
+                    <span class="impact">Impact Factor: 43.841</span>
+                  </div>
+                  <a href="https://doi.org/10.1038/s41563-022-01234-0" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1038/s41563-022-01234-0
+                  </a>
+                </div>
+                
+                <div class="publication-card highlighted">
+                  <h3>Ultrafast laser-enabled multifunctional surfaces for advanced photonic applications</h3>
+                  <p class="authors">Singh P., Kumar R.</p>
+                  <div class="pub-meta">
+                    <p>Science Advances, 2021</p>
+                    <span class="impact">Impact Factor: 13.116</span>
+                  </div>
+                  <a href="https://doi.org/10.1126/sciadv.abd1234" target="_blank" rel="noopener noreferrer" class="doi-link">
+                    10.1126/sciadv.abd1234
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="patents">
+              <div class="publications-list">
+                <div class="publication-card">
+                  <h3>Method and apparatus for laser-assisted manufacturing of gradient functional materials</h3>
+                  <p>Inventors: Kumar R., Sharma A.</p>
+                  <p>Patent Number: US Patent 11,325,876</p>
+                  <div class="pub-meta">
+                    <p>Year: 2023</p>
+                    <span class="status granted">Granted</span>
+                  </div>
+                </div>
+                
+                <div class="publication-card">
+                  <h3>Surface texturing method using interference of ultrafast laser beams</h3>
+                  <p>Inventors: Singh P., Kumar R.</p>
+                  <p>Patent Number: Indian Patent 123456</p>
+                  <div class="pub-meta">
+                    <p>Year: 2022</p>
+                    <span class="status pending">Filed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="publications.html" class="link-arrow">
+            View complete publication list <span class="icon">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>LAMP</h3>
+          <p>
+            LASER ADVANCED MATERIALS PROCESSING LAB at IIT Bombay advances research in laser-material interactions and manufacturing technologies.
+          </p>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">𝕏</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">in</span>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">▶</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="capabilities.html">Industry</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="icon">📍</span>
+              <span>
+                Department of Mechanical Engineering,<br />
+                IIT Bombay, Powai,<br />
+                Mumbai - 400076, India
+              </span>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <a href="mailto:lamp@iitb.ac.in">lamp@iitb.ac.in</a>
+            </li>
+            <li>
+              <span class="icon">📞</span>
+              <a href="tel:+912225767890">+91 (22) 2576 7890</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>
+            Subscribe to our newsletter for updates on research breakthroughs and upcoming events.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn-icon">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2023</span> LAMP, IIT Bombay. All rights reserved.
+        </p>
+        <div class="iitb-link">
+          <span class="icon">🌐</span>
+          <a href="https://www.iitb.ac.in" target="_blank" rel="noopener noreferrer">
+            IIT Bombay
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

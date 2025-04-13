@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment - LAMP</title>
+  <meta name="description" content="Equipment and facilities at the Laser Advanced Materials Processing Lab, IIT Bombay" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="index.html" class="logo">
+            <span class="logo-text">LAMP</span>
+            <span class="logo-subtext">LASER ADVANCED MATERIALS PROCESSING LAB</span>
+          </a>
+
+          <button class="mobile-menu-button" id="menuToggle">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon hidden">✕</span>
+          </button>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html" class="active">Equipment</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+          <a href="index.html" class="mobile-link">Home</a>
+          <a href="research.html" class="mobile-link">Research</a>
+          <a href="team.html" class="mobile-link">Team</a>
+          <a href="equipment.html" class="mobile-link active">Equipment</a>
+          <a href="capabilities.html" class="mobile-link">Capabilities</a>
+          <a href="publications.html" class="mobile-link">Publications</a>
+          <a href="students.html" class="mobile-link">For Students</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Equipment & Facilities</h1>
+        <p class="page-description">
+          Our laboratory is equipped with state-of-the-art laser systems and material characterization tools to support cutting-edge research.
+        </p>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="container">
+        <h2 class="section-heading">Laboratory Equipment</h2>
+        
+        <div class="tabs" id="equipmentTabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="laser-systems">Laser Systems</button>
+            <button class="tab-btn" data-tab="characterization">Characterization</button>
+            <button class="tab-btn" data-tab="additive-manufacturing">Additive Manufacturing</button>
+            <button class="tab-btn" data-tab="service-charges">Service Charges</button>
+          </div>
+          
+          <div class="tab-content">
+            <div class="tab-pane active" id="laser-systems">
+              <div class="equipment-detail-grid">
+                <div class="equipment-detail-card" id="high-power-fiber-laser-system">
+                  <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                  <div class="equipment-header">
+                    <h3>High-Power Fiber Laser System</h3>
+                    <span class="badge">2021</span>
+                  </div>
+                  <div class="tags">
+                    <span class="tag">Cutting</span>
+                    <span class="tag">Welding</span>
+                    <span class="tag">Surface Treatment</span>
+                  </div>
+                  <div class="equipment-specs">
+                    <h4>Technical Specifications:</h4>
+                    <ul>
+                      <li><strong>Power:</strong> 2kW continuous wave</li>
+                      <li><strong>Wavelength:</strong> 1070nm</li>
+                      <li><strong>Beam Quality:</strong> M² < 1.1</li>
+                      <li><strong>Positioning System:</strong> 3-axis CNC with 1000mm x 1000mm x 500mm working area</li>
+                      <li><strong>Control System:</strong> Integrated touchscreen interface with custom software</li>
+                    </ul>
+                  </div>
+                  <div class="equipment-description">
+                    <p>
+                      Our high-power fiber laser system enables precise cutting, welding, and surface treatment of a wide range of materials including metals, ceramics, and composites. The system includes an integrated chiller unit, beam delivery optics, and gas assist capabilities.
+                    </p>
+                    <p>
+                      The system can be configured for different processing modes including cutting with nitrogen, oxygen, or compressed air, welding with or without filler material, and surface treatment with controlled atmosphere.
+                    </p>
+                  </div>
+                  <div class="equipment-rates">
+                    <h4>Service Charges (per hour):</h4>
+                    <div class="rate-row">
+                      <span>Academic Rate:</span>
+                      <span>₹2,500</span>
+                    </div>
+                    <div class="rate-row">
+                      <span>Industry Rate:</span>
+                      <span>₹5,000</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="equipment-detail-card" id="femtosecond-laser-micromachining-station">
+                  <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                  <div class="equipment-header">
+                    <h3>Femtosecond Laser Micromachining Station</h3>
+                    <span class="badge">2022</span>
+                  </div>
+                  <div class="tags">
+                    <span class="tag">Micromachining</span>
+                    <span class="tag">Ablation</span>
+                    <span class="tag">Surface Texturing</span>
+                  </div>
+                  <div class="equipment-specs">
+                    <h4>Technical Specifications:</h4>
+                    <ul>
+                      <li><strong>Pulse Duration:</strong> < 400 fs</li>
+                      <li><strong>Wavelength:</strong> 1030nm (fundamental), 515nm and 343nm (harmonics)</li>
+                      <li><strong>Repetition Rate:</strong> Single pulse to 1 MHz</li>
+                      <li><strong>Max Pulse Energy:</strong> 400 μJ at 1030nm</li>
+                      <li><strong>Positioning System:</strong> 5-axis with nanometer resolution</li>
+                      <li><strong>Working Area:</strong> 200mm x 200mm x 100mm</li>
+                    </ul>
+                  </div>
+                  <div class="equipment-description">
+                    <p>
+                      The femtosecond laser micromachining station provides non-thermal material removal capabilities for precision structuring of virtually any material. The ultrafast laser pulses enable ablation without heat-affected zones, allowing for extremely precise material processing.
+                    </p>
+                    <p>
+                      This system is ideal for creating microstructures, surface texturing, and precision micromachining of sensitive materials including polymers, biological tissues, ceramics, semiconductors, and metals.
+                    </p>
+                  </div>
+                  <div class="equipment-rates">
+                    <h4>Service Charges (per hour):</h4>
+                    <div class="rate-row">
+                      <span>Academic Rate:</span>
+                      <span>₹3,000</span>
+                    </div>
+                    <div class="rate-row">
+                      <span>Industry Rate:</span>
+                      <span>₹6,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="characterization">
+              <div class="equipment-detail-grid">
+                <div class="equipment-detail-card" id="advanced-materials-characterization-suite">
+                  <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1576086135878-31532902b544?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                  <div class="equipment-header">
+                    <h3>Advanced Materials Characterization Suite</h3>
+                    <span class="badge">2019</span>
+                  </div>
+                  <div class="tags">
+                    <span class="tag">Material Analysis</span>
+                    <span class="tag">Surface Characterization</span>
+                    <span class="tag">Mechanical Testing</span>
+                  </div>
+                  <div class="equipment-specs">
+                    <h4>Technical Specifications:</h4>
+                    <ul>
+                      <li><strong>Scanning Electron Microscope:</strong> Resolution down to 3nm with EDS capabilities</li>
+                      <li><strong>X-Ray Diffractometer:</strong> 2-theta range from 5° to 140°</li>
+                      <li><strong>Micro-hardness Tester:</strong> Load range from 10g to 1kg</li>
+                      <li><strong>3D Surface Profilometer:</strong> Vertical resolution of 0.1nm</li>
+                      <li><strong>Optical Microscope:</strong> Magnification up to 1000x with digital imaging</li>
+                    </ul>
+                  </div>
+                  <div class="equipment-description">
+                    <p>
+                      Our comprehensive characterization suite enables detailed analysis of material microstructure, phase composition, surface topography, and mechanical properties. This integrated facility supports both qualitative and quantitative analysis of processed materials.
+                    </p>
+                    <p>
+                      The suite is extensively used for analyzing laser-processed samples, evaluating surface modifications, and correlating processing parameters with material properties.
+                    </p>
+                  </div>
+                  <div class="equipment-rates">
+                    <h4>Service Charges (per hour):</h4>
+                    <div class="rate-row">
+                      <span>Academic Rate:</span>
+                      <span>₹2,000</span>
+                    </div>
+                    <div class="rate-row">
+                      <span>Industry Rate:</span>
+                      <span>₹4,500</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="additive-manufacturing">
+              <div class="equipment-detail-grid">
+                <div class="equipment-detail-card" id="selective-laser-melting-system">
+                  <div class="equipment-img" style="background-image: url('https://images.unsplash.com/photo-1581094338460-ade62ea0a586?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                  <div class="equipment-header">
+                    <h3>Selective Laser Melting System</h3>
+                    <span class="badge">2020</span>
+                  </div>
+                  <div class="tags">
+                    <span class="tag">Additive Manufacturing</span>
+                    <span class="tag">Rapid Prototyping</span>
+                  </div>
+                  <div class="equipment-specs">
+                    <h4>Technical Specifications:</h4>
+                    <ul>
+                      <li><strong>Laser Power:</strong> 400W fiber laser</li>
+                      <li><strong>Build Volume:</strong> 250mm x 250mm x 325mm</li>
+                      <li><strong>Layer Thickness:</strong> 20-100μm</li>
+                      <li><strong>Scan Speed:</strong> Up to 7m/s</li>
+                      <li><strong>Materials:</strong> Stainless steel, aluminum alloys, titanium alloys, nickel alloys</li>
+                      <li><strong>Atmosphere Control:</strong> Inert gas (N₂ or Ar)</li>
+                    </ul>
+                  </div>
+                  <div class="equipment-description">
+                    <p>
+                      The selective laser melting system enables the creation of complex metal parts with intricate internal features that would be impossible to produce using conventional manufacturing methods. The system builds parts layer by layer from metal powder that is selectively melted by a high-power fiber laser.
+                    </p>
+                    <p>
+                      Applications include rapid prototyping of functional metal components, manufacturing of optimized structures through topology optimization, and production of customized implants for biomedical applications.
+                    </p>
+                  </div>
+                  <div class="equipment-rates">
+                    <h4>Service Charges (per hour):</h4>
+                    <div class="rate-row">
+                      <span>Academic Rate:</span>
+                      <span>₹3,500</span>
+                    </div>
+                    <div class="rate-row">
+                      <span>Industry Rate:</span>
+                      <span>₹7,000</span>
+                    </div>
+                    <div class="rate-note">
+                      <p><strong>Note:</strong> Material costs are additional and charged based on actual usage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane" id="service-charges">
+              <div class="service-charges-section">
+                <h3>Equipment Usage Charges</h3>
+                <p>The following are the standard charges for equipment usage at the LAMP facility. All rates are per hour unless otherwise specified.</p>
+                
+                <table class="service-charges-table">
+                  <thead>
+                    <tr>
+                      <th>Equipment</th>
+                      <th>Academic Rate (₹)</th>
+                      <th>Industry Rate (₹)</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>High-Power Fiber Laser System</td>
+                      <td>2,500</td>
+                      <td>5,000</td>
+                      <td>Includes assist gas and basic fixtures</td>
+                    </tr>
+                    <tr>
+                      <td>Femtosecond Laser Micromachining Station</td>
+                      <td>3,000</td>
+                      <td>6,000</td>
+                      <td>All wavelengths available</td>
+                    </tr>
+                    <tr>
+                      <td>Selective Laser Melting System</td>
+                      <td>3,500</td>
+                      <td>7,000</td>
+                      <td>Material costs are additional</td>
+                    </tr>
+                    <tr>
+                      <td>Advanced Materials Characterization Suite</td>
+                      <td>2,000</td>
+                      <td>4,500</td>
+                      <td>Individual equipment can be booked separately</td>
+                    </tr>
+                    <tr>
+                      <td>Direct Laser Interference Patterning System</td>
+                      <td>2,800</td>
+                      <td>5,500</td>
+                      <td>Specialized substrates available</td>
+                    </tr>
+                    <tr>
+                      <td>High-Temperature Vacuum Processing Chamber</td>
+                      <td>2,200</td>
+                      <td>4,800</td>
+                      <td>Includes standard gases</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                <div class="service-additional-info">
+                  <h4>Additional Services</h4>
+                  <table class="service-charges-table">
+                    <thead>
+                      <tr>
+                        <th>Service</th>
+                        <th>Academic Rate (₹)</th>
+                        <th>Industry Rate (₹)</th>
+                        <th>Unit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sample Preparation</td>
+                        <td>1,000</td>
+                        <td>2,500</td>
+                        <td>Per sample</td>
+                      </tr>
+                      <tr>
+                        <td>CAD/CAM Design Services</td>
+                        <td>1,500</td>
+                        <td>3,500</td>
+                        <td>Per hour</td>
+                      </tr>
+                      <tr>
+                        <td>Process Optimization</td>
+                        <td>2,000</td>
+                        <td>5,000</td>
+                        <td>Per day</td>
+                      </tr>
+                      <tr>
+                        <td>Technical Consultation</td>
+                        <td>2,500</td>
+                        <td>6,000</td>
+                        <td>Per hour</td>
+                      </tr>
+                      <tr>
+                        <td>Data Analysis</td>
+                        <td>1,800</td>
+                        <td>4,000</td>
+                        <td>Per dataset</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div class="service-policies">
+                  <h4>Usage Policies</h4>
+                  <ul>
+                    <li><strong>Booking:</strong> Equipment must be booked at least 48 hours in advance.</li>
+                    <li><strong>Cancellation:</strong> Cancellations within 24 hours of booked time will incur a 50% charge.</li>
+                    <li><strong>Training:</strong> First-time users must undergo mandatory training (charged separately).</li>
+                    <li><strong>Operator Assistance:</strong> Technical staff assistance is included in the rates.</li>
+                    <li><strong>Long-term Projects:</strong> Discounts available for extended usage (contact for details).</li>
+                  </ul>
+                </div>
+                
+                <div class="service-contact">
+                  <h4>Book Equipment or Services</h4>
+                  <p>For equipment bookings, service requests, or special requirements, please contact:</p>
+                  <p><strong>Email:</strong> <a href="mailto:lamp.facilities@iitb.ac.in">lamp.facilities@iitb.ac.in</a></p>
+                  <p><strong>Phone:</strong> +91 (22) 2576 7891</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>LAMP</h3>
+          <p>
+            LASER ADVANCED MATERIALS PROCESSING LAB at IIT Bombay advances research in laser-material interactions and manufacturing technologies.
+          </p>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">𝕏</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">in</span>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <span class="icon">▶</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="capabilities.html">Industry</a></li>
+            <li><a href="students.html">For Students</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="icon">📍</span>
+              <span>
+                Department of Mechanical Engineering,<br />
+                IIT Bombay, Powai,<br />
+                Mumbai - 400076, India
+              </span>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <a href="mailto:lamp@iitb.ac.in">lamp@iitb.ac.in</a>
+            </li>
+            <li>
+              <span class="icon">📞</span>
+              <a href="tel:+912225767890">+91 (22) 2576 7890</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>
+            Subscribe to our newsletter for updates on research breakthroughs and upcoming events.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn-icon">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2023</span> LAMP, IIT Bombay. All rights reserved.
+        </p>
+        <div class="iitb-link">
+          <span class="icon">🌐</span>
+          <a href="https://www.iitb.ac.in" target="_blank" rel="noopener noreferrer">
+            IIT Bombay
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
